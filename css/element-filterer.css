@@ -8,9 +8,14 @@
 }
 
 #filter-all:checked ~ .filters [for="filter-all"],
-#filter-group-1:checked ~ .filters [for="filter-group-1"],
-#filter-group-2:checked ~ .filters [for="filter-group-2"],
-#filter-group-3:checked ~ .filters [for="filter-group-3"] {
+#filter-branding:checked ~ .filters [for="filter-branding"],
+#filter-ux:checked ~ .filters [for="filter-ux"],
+#filter-web:checked ~ .filters [for="filter-web"],
+#filter-illustration:checked ~ .filters [for="filter-illustration"],
+#filter-motion:checked ~ .filters [for="filter-motion"],
+#filter-print:checked ~ .filters [for="filter-print"],
+#filter-type:checked ~ .filters [for="filter-type"],
+#filter-photo:checked ~ .filters [for="filter-photo"] {
   background-color: red;
 }
 
@@ -30,8 +35,17 @@
 
 /* > will only select direct child descendant */
 
-#filter-group-1:checked ~ .filter-items > [data-category~="group-1"],
-#filter-group-2:checked ~ .filter-items > [data-category~="group-2"],
-#filter-group-3:checked ~ .filter-items > [data-category~="group-3"] {
+#filter-branding:checked ~ .filter-items > [data-category~="branding"],
+#filter-ux:checked ~ .filter-items > [data-category~="ux"],
+#filter-web:checked ~ .filter-items > [data-category~="web"],
+#filter-illustration:checked ~ .filter-items > [data-category~="illustration"],
+#filter-motion:checked ~ .filter-items > [data-category~="motion"],
+#filter-print:checked ~ .filter-items > [data-category~="print"],
+#filter-type:checked ~ .filter-items > [data-category~="type"],
+#filter-photo:checked ~ .filter-items > [data-category~="photo"] {
   opacity: 1;
+}
+
+ul li {
+  list-style-type: none;
 }
