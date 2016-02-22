@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Element Filterer</title>
+  <link href="css/element-filterer.css" rel="stylesheet">
+</head>
+<body>
+
+  <input class="filter-radio" id="filter-all" checked type="radio" name="filters">
+  <input class="filter-radio" id="filter-group-1" type="radio" name="filters">
+  <input class="filter-radio" id="filter-group-2" type="radio" name="filters">
+  <input class="filter-radio" id="filter-group-3" type="radio" name="filters">
+
+  <div class="filters">
+    <label for="filter-all">All</label>
+    <label for="filter-group-1">Group 1</label>
+    <label for="filter-group-2">Group 2</label>
+    <label for="filter-group-3">Group 3</label>
+  </div>
+
+  <ul class="filter-items">
+    <li data-category="group-1">
+      <h2>Group 1</h2>
+    </li>
+    <li data-category="group-3">
+      <h2>Group 3</h2>
+    </li>
+    <li data-category="group-2 group-3">
+      <h2>Group 2 & Group 3</h2>
+    </li>
+  </ul>
+
+</body>
+</html>

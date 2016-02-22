@@ -1,0 +1,37 @@
+.filter-radio {
+  left: -50px;
+  position: absolute;
+}
+
+.filters label {
+  cursor: pointer;
+}
+
+#filter-all:checked ~ .filters [for="filter-all"],
+#filter-group-1:checked ~ .filters [for="filter-group-1"],
+#filter-group-2:checked ~ .filters [for="filter-group-2"],
+#filter-group-3:checked ~ .filters [for="filter-group-3"] {
+  background-color: red;
+}
+
+/* The ~ sibling selector will select all .filters elements, as long as they folow the preceding value*/
+
+.filter-items {
+
+}
+
+.filter-items > li {
+  opacity: .4;
+}
+
+#filter-all:checked ~ .filter-items > li {
+  opacity: 1;
+}
+
+/* > will only select direct child descendant */
+
+#filter-group-1:checked ~ .filter-items > [data-category~="group-1"],
+#filter-group-2:checked ~ .filter-items > [data-category~="group-2"],
+#filter-group-3:checked ~ .filter-items > [data-category~="group-3"] {
+  opacity: 1;
+}
