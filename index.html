@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Element Filterer</title>
   <link href="css/element-filterer.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
 </head>
 <body>
 
@@ -20,18 +21,21 @@
   <input class="filter-radio" id="filter-photo" type="radio" name="filters">
 
 
-
-  <div class="filters">
-    <label for="filter-all">All</label>
-    <label for="filter-branding">Branding</label>
-    <label for="filter-ux">UX-UI</label>
-    <label for="filter-web">Web</label>
-    <label for="filter-illustration">Illustration</label>
-    <label for="filter-motion">Motion</label>
-    <label for="filter-print">Print</label>
-    <label for="filter-type">Typography</label>
-    <label for="filter-photo">Photography</label>
-  </div>
+<div class="grid">
+  <div class="unit">
+    <div class="filters">
+      <label class="filter-btn" for="filter-all">All</label>
+      <label class="filter-btn" for="filter-branding">Branding</label>
+      <label class="filter-btn" for="filter-ux">UX-UI</label>
+      <label class="filter-btn" for="filter-web">Web</label>
+      <label class="filter-btn" for="filter-illustration">Illustration</label>
+      <label class="filter-btn" for="filter-motion">Motion</label>
+      <label class="filter-btn" for="filter-print">Print</label>
+      <label class="filter-btn" for="filter-type">Typography</label>
+      <label class="filter-btn" for="filter-photo">Photography</label>
+    </div>
+  </div> <!-- /unit -->
+</div> <!-- /grid -->
 
   <ul class="filter-items">
     <li data-category="branding ux print">

@@ -1,3 +1,9 @@
+
+body {
+  font-family: 'Helvetica', Arial, sans-serif;
+}
+
+
 .filter-radio {
   left: -50px;
   position: absolute;
@@ -16,10 +22,18 @@
 #filter-print:checked ~ .filters [for="filter-print"],
 #filter-type:checked ~ .filters [for="filter-type"],
 #filter-photo:checked ~ .filters [for="filter-photo"] {
+  background-color: black;
+  color: white;
+}
+
+#filter-all:checked ~ .filters [for="filter-all"],
+#filter-branding:checked ~ .filters [for="filter-branding"],
+#filter-group-2:checked ~ .filters [for="filter-group-2"],
+#filter-group-3:checked ~ .filters [for="filter-group-3"] {
   background-color: red;
 }
 
-/* The ~ sibling selector will select all .filters elements, as long as they folow the preceding value*/
+/* The ~ sibling selector will select all .filters elements, as long as they follow the preceding value*/
 
 .filter-items {
 
@@ -49,3 +63,16 @@
 ul li {
   list-style-type: none;
 }
+
+.filter-btn {
+  display: inline-block;
+  margin: 0;
+  background-color: #dcdadb;
+  color: #55565b;
+  padding: .5em 1em;
+}
+
+.filter-btn:hover {
+  background-color: #a6a5a8;
+}
+
