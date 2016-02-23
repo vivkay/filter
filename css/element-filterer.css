@@ -3,7 +3,6 @@ body {
   font-family: 'Helvetica', Arial, sans-serif;
 }
 
-
 .filter-radio {
   left: -50px;
   position: absolute;
@@ -13,15 +12,17 @@ body {
   cursor: pointer;
 }
 
-#filter-all:checked ~ .filters [for="filter-all"],
-#filter-branding:checked ~ .filters [for="filter-branding"],
-#filter-ux:checked ~ .filters [for="filter-ux"],
-#filter-web:checked ~ .filters [for="filter-web"],
-#filter-illustration:checked ~ .filters [for="filter-illustration"],
-#filter-motion:checked ~ .filters [for="filter-motion"],
-#filter-print:checked ~ .filters [for="filter-print"],
-#filter-type:checked ~ .filters [for="filter-type"],
-#filter-photo:checked ~ .filters [for="filter-photo"] {
+/* add .grid selector because that is now the sibling element of the filter. call .grid and its child .filters */
+
+#filter-all:checked ~ .grid .filters [for="filter-all"],
+#filter-branding:checked ~ .grid .filters [for="filter-branding"],
+#filter-ux:checked ~ .grid .filters [for="filter-ux"],
+#filter-web:checked ~ .grid .filters [for="filter-web"],
+#filter-illustration:checked ~ .grid .filters [for="filter-illustration"],
+#filter-motion:checked ~ .grid .filters [for="filter-motion"],
+#filter-print:checked ~ .grid .filters [for="filter-print"],
+#filter-type:checked ~ .grid .filters [for="filter-type"],
+#filter-photo:checked ~ .grid .filters [for="filter-photo"] {
   background-color: black;
   color: white;
 }
